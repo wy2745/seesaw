@@ -22,9 +22,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/common/server"
-	"github.com/google/seesaw/ha"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/server"
+	"github.com/wy2745/seesaw/ha"
 
 	log "github.com/golang/glog"
 )

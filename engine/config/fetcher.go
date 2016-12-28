@@ -28,7 +28,7 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/google/seesaw/pb/config"
+	pb "github.com/wy2745/seesaw/pb/config"
 
 	log "github.com/golang/glog"
 	"github.com/golang/protobuf/proto"

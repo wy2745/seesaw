@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/seesaw/healthcheck"
+	"github.com/wy2745/seesaw/healthcheck"
 )
 
 var (

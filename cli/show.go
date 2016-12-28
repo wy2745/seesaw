@@ -25,8 +25,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/quagga"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/quagga"
 )
 
 const (

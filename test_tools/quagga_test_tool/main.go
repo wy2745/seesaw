@@ -32,7 +32,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/google/seesaw/quagga"
+	"github.com/wy2745/seesaw/quagga"
 )
 
 const testAnycastStr = "172.16.255.14/32"

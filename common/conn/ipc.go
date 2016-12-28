@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"net/rpc"
 
-	"github.com/google/seesaw/common/ipc"
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/quagga"
+	"github.com/wy2745/seesaw/common/ipc"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/quagga"
 )
 
 func init() {

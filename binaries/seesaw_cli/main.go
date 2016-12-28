@@ -28,10 +28,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/google/seesaw/cli"
-	"github.com/google/seesaw/common/conn"
-	"github.com/google/seesaw/common/ipc"
-	"github.com/google/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/cli"
+	"github.com/wy2745/seesaw/common/conn"
+	"github.com/wy2745/seesaw/common/ipc"
+	"github.com/wy2745/seesaw/common/seesaw"
 
 	"golang.org/x/crypto/ssh/terminal"
 )
@@ -42,6 +42,8 @@ var (
 
 	oldTermState *terminal.State
 	prompt       string
+	// prompt is a string that is written at the start of each input line (i.e.
+	// "> ").
 	seesawCLI    *cli.SeesawCLI
 	seesawConn   *conn.Seesaw
 	term         *terminal.Terminal
@@ -49,7 +51,7 @@ var (
 
 func exit() {
 	if oldTermState != nil {
-		terminal.Restore(syscall.Stdin, oldTermState)
+		terminal.Restore(syscall.Stdin, oldTermState) //将输出重新定位回原来的file去
 	}
 	fmt.Printf("\n")
 	os.Exit(0)
@@ -78,14 +80,16 @@ func resume() {
 	terminalInit()
 }
 
+//初始化terminal
 func terminalInit() {
 	var err error
-	oldTermState, err = terminal.MakeRaw(syscall.Stdin)
+	oldTermState, err = terminal.MakeRaw(syscall.Stdin) //记录旧terminal
 	if err != nil {
 		fatalf("Failed to get raw terminal: %v", err)
 	}
 
-	term = terminal.NewTerminal(os.Stdin, prompt)
+	term = terminal.NewTerminal(os.Stdin, prompt)  //新建一个terminal，输出以prompt开头
+	//设置一些按键
 	term.AutoCompleteCallback = autoComplete
 }
 
@@ -167,11 +171,13 @@ func interactive() {
 
 	// Setup signal handler before we switch to a raw terminal.
 	sigc := make(chan os.Signal, 3)
+	//只要收到以下三个signal，就退出
 	signal.Notify(sigc, syscall.SIGINT, syscall.SIGQUIT, syscall.SIGTERM)
 	go func() {
 		<-sigc
 		exit()
 	}()
+
 
 	terminalInit()
 
@@ -180,10 +186,12 @@ func interactive() {
 		if err != nil {
 			break
 		}
+		//获取cmd
 		cmdline = strings.TrimSpace(cmdline)
 		if cmdline == "" {
 			continue
 		}
+		//执行cmd
 		if err := seesawCLI.Execute(cmdline); err != nil {
 			fmt.Println(err)
 		}
@@ -193,10 +201,13 @@ func interactive() {
 func main() {
 	flag.Parse()
 
+	//为组件创建一个新的context
 	ctx := ipc.NewTrustedContext(seesaw.SCLocalCLI)
 
 	var err error
+	//建立一个新的ipc连接
 	seesawConn, err = conn.NewSeesawIPC(ctx)
+
 	if err != nil {
 		fatalf("Failed to connect to engine: %v", err)
 	}
@@ -204,13 +215,15 @@ func main() {
 		fatalf("Failed to connect to engine: %v", err)
 	}
 	defer seesawConn.Close()
+	//将engine和cli进行连接
 	seesawCLI = cli.NewSeesawCLI(seesawConn, exit)
 
+	//如果没有指令，那么循环等待
 	if *command == "" {
 		interactive()
 		exit()
 	}
-
+	//如果有指令，执行
 	if err := seesawCLI.Execute(*command); err != nil {
 		fatalf("%v", err)
 	}

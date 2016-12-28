@@ -24,7 +24,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/google/seesaw/netlink"
+	"github.com/wy2745/seesaw/netlink"
 )
 
 /*

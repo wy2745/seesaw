@@ -16,13 +16,16 @@
 
 // The seesaw_ecu binary implements the Seesaw ECU component, which provides
 // an externally accessible interface to monitor and control the Seesaw Node.
+
+
+//ECU的作用是监控和控制seesaw的节点
 package main
 
 import (
 	"flag"
 
-	"github.com/google/seesaw/common/server"
-	"github.com/google/seesaw/ecu"
+	"github.com/wy2745/seesaw/common/server"
+	"github.com/wy2745/seesaw/ecu"
 )
 
 var (
@@ -40,6 +43,8 @@ func main() {
 	ecuCfg.MonitorAddress = *monitorAddress
 
 	ecu := ecu.NewECU(&ecuCfg)
+
 	server.ShutdownHandler(ecu)
+
 	ecu.Run()
 }

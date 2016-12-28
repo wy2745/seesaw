@@ -30,11 +30,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/common/server"
-	"github.com/google/seesaw/engine/config"
-	ncclient "github.com/google/seesaw/ncc/client"
-	ncctypes "github.com/google/seesaw/ncc/types"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/server"
+	"github.com/wy2745/seesaw/engine/config"
+	ncclient "github.com/wy2745/seesaw/ncc/client"
+	ncctypes "github.com/wy2745/seesaw/ncc/types"
 
 	log "github.com/golang/glog"
 )

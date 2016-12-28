@@ -23,8 +23,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/google/seesaw/common/conn"
-	"github.com/google/seesaw/common/ipc"
+	"github.com/wy2745/seesaw/common/conn"
+	"github.com/wy2745/seesaw/common/ipc"
 )
 
 // authInit initialises the authentication system.

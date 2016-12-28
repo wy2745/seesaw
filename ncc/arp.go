@@ -27,7 +27,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	ncctypes "github.com/google/seesaw/ncc/types"
+	ncctypes "github.com/wy2745/seesaw/ncc/types"
 
 	log "github.com/golang/glog"
 )

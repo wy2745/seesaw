@@ -21,11 +21,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/google/seesaw/common/ipc"
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/engine/config"
-	"github.com/google/seesaw/healthcheck"
-	"github.com/google/seesaw/quagga"
+	"github.com/wy2745/seesaw/common/ipc"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/engine/config"
+	"github.com/wy2745/seesaw/healthcheck"
+	"github.com/wy2745/seesaw/quagga"
 
 	log "github.com/golang/glog"
 )

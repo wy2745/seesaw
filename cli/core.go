@@ -22,7 +22,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/google/seesaw/common/conn"
+	"github.com/wy2745/seesaw/common/conn"
 )
 
 // SeesawCLI represents a Seesaw command line interface.

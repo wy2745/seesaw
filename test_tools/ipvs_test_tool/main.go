@@ -32,7 +32,7 @@ import (
 	"reflect"
 	"syscall"
 
-	"github.com/google/seesaw/ipvs"
+	"github.com/wy2745/seesaw/ipvs"
 )
 
 var ipvsTests = []struct {

@@ -24,7 +24,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/google/seesaw/ipvs"
+	"github.com/wy2745/seesaw/ipvs"
 )
 
 const (
@@ -67,6 +67,7 @@ func AFs() []AF {
 // Component identifies a particular Seesaw component.
 type Component int
 
+//各种组件
 const (
 	SCNone Component = iota
 	SCEngine

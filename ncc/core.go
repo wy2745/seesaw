@@ -26,7 +26,7 @@ import (
 	"net/rpc"
 	"os"
 
-	"github.com/google/seesaw/common/server"
+	"github.com/wy2745/seesaw/common/server"
 
 	log "github.com/golang/glog"
 )

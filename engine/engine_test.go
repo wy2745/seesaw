@@ -23,11 +23,11 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/ipvs"
-	ncclient "github.com/google/seesaw/ncc/client"
-	ncctypes "github.com/google/seesaw/ncc/types"
-	"github.com/google/seesaw/quagga"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/ipvs"
+	ncclient "github.com/wy2745/seesaw/ncc/client"
+	ncctypes "github.com/wy2745/seesaw/ncc/types"
+	"github.com/wy2745/seesaw/quagga"
 
 	log "github.com/golang/glog"
 )

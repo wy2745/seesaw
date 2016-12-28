@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/seesaw"
 )
 
 // Cluster represents the configuration for a load balancing cluster.

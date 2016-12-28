@@ -22,8 +22,8 @@ package ncc
 import (
 	"sync"
 
-	"github.com/google/seesaw/ipvs"
-	ncctypes "github.com/google/seesaw/ncc/types"
+	"github.com/wy2745/seesaw/ipvs"
+	ncctypes "github.com/wy2745/seesaw/ncc/types"
 
 	log "github.com/golang/glog"
 )

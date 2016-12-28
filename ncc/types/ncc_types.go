@@ -21,9 +21,9 @@ package types
 import (
 	"net"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/ipvs"
-	"github.com/google/seesaw/quagga"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/ipvs"
+	"github.com/wy2745/seesaw/quagga"
 )
 
 // ARPGratuitous encapsulates a request to send a gratuitous ARP message.

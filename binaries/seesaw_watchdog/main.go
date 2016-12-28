@@ -22,9 +22,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/common/server"
-	"github.com/google/seesaw/watchdog"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/server"
+	"github.com/wy2745/seesaw/watchdog"
 
 	conf "github.com/dlintw/goconf"
 	log "github.com/golang/glog"

@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
-	pb "github.com/google/seesaw/pb/config"
+	"github.com/wy2745/seesaw/common/seesaw"
+	pb "github.com/wy2745/seesaw/pb/config"
 
 	"github.com/golang/protobuf/proto"
 )

@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/google/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/seesaw"
 )
 
 func overrideVserverStateDefault(cli *SeesawCLI, args []string) error {

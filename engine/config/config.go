@@ -28,8 +28,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
-	pb "github.com/google/seesaw/pb/config"
+	"github.com/wy2745/seesaw/common/seesaw"
+	pb "github.com/wy2745/seesaw/pb/config"
 
 	log "github.com/golang/glog"
 	"github.com/golang/protobuf/proto"

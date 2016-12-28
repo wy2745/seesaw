@@ -24,10 +24,10 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/common/server"
-	"github.com/google/seesaw/engine/config"
-	"github.com/google/seesaw/engine"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/server"
+	"github.com/wy2745/seesaw/engine/config"
+	"github.com/wy2745/seesaw/engine"
 
 	conf "github.com/dlintw/goconf"
 	log "github.com/golang/glog"

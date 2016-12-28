@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/seesaw"
 
 	log "github.com/golang/glog"
 )

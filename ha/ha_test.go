@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/common/seesaw"
 )
 
 type dummyHAConn struct{}

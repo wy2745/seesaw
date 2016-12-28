@@ -24,8 +24,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/google/seesaw/common/seesaw"
-	ncctypes "github.com/google/seesaw/ncc/types"
+	"github.com/wy2745/seesaw/common/seesaw"
+	ncctypes "github.com/wy2745/seesaw/ncc/types"
 
 	log "github.com/golang/glog"
 )

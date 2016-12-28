@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/seesaw/quagga"
+	"github.com/wy2745/seesaw/quagga"
 
 	log "github.com/golang/glog"
 )

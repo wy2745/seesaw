@@ -22,8 +22,8 @@ package main
 import (
 	"flag"
 
-	"github.com/google/seesaw/common/server"
-	"github.com/google/seesaw/healthcheck"
+	"github.com/wy2745/seesaw/common/server"
+	"github.com/wy2745/seesaw/healthcheck"
 )
 
 var (

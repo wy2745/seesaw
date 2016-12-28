@@ -33,10 +33,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/google/seesaw/common/seesaw"
-	"github.com/google/seesaw/ipvs"
-	"github.com/google/seesaw/ncc/client"
-	"github.com/google/seesaw/ncc/types"
+	"github.com/wy2745/seesaw/common/seesaw"
+	"github.com/wy2745/seesaw/ipvs"
+	"github.com/wy2745/seesaw/ncc/client"
+	"github.com/wy2745/seesaw/ncc/types"
 )
 
 var (

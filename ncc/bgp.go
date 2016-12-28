@@ -25,8 +25,8 @@ import (
 	"net"
 	"strings"
 
-	ncctypes "github.com/google/seesaw/ncc/types"
-	"github.com/google/seesaw/quagga"
+	ncctypes "github.com/wy2745/seesaw/ncc/types"
+	"github.com/wy2745/seesaw/quagga"
 )
 
 // TODO(jsing): Make this configurable.
